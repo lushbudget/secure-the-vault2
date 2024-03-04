@@ -16,6 +16,24 @@ const numTwo = 11 * 4 - 4;
 //create a variable for the third number with an equation that equals 39.
 const numThree = 80 / 2 - 1;
 
-//alert the message and vault combination so they show up in a dialoge box.
+//create a variable for the entire combination
+const secretCombo = numOne + '-' + numTwo + '-' + numThree
 
-alert(`You have recieved this message because you have been chosen to open an important vault. Here is the combination: ${numOne}-${numTwo}-${numThree}`)
+
+const userCombo = prompt("guess the combination to the vault!")
+  if (userCombo === secretCombo) {
+    alert('OPEN SESAME!')
+    if(window.confirm('Come in?')) {
+      window.open('./inside.html')
+    }
+    else window.open('https://www.imdb.com/title/tt0366996/')
+    } else {
+  alert('Get out ya Bozo!!')
+  if(window.confirm('Try again?')) {
+    window.open('index.html')
+  }
+  else window.open('https://en.wikipedia.org/wiki/Bozo_the_Clown')
+  }
+
+
+
