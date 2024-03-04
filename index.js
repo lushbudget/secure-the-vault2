@@ -1,3 +1,12 @@
+/*
+1) Create variables for each number in the combination.
+2) Create a message with a template literal that reads the desired message followed by the 3 variables 
+    separated by dashes to create the vault combination.
+3) Use an alert to make the entire string pop up in a dialog box.
+*/
+
+
+
 //create a variable for the first number with an equation that equals 10.
 const numOne = 5 * 2;
 
